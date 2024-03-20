@@ -1,0 +1,225 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: white;
+}
+.tit-team {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 5px 5px 5px 5px solid black;
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    background-color: white;
+}
+
+.logo img,
+.company-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.profile-pic img {
+    margin-left: 30px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    margin: 2px;
+    border: 1px solid #ddd;
+    padding: 3px;
+    background-color: white;
+    
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.sidebar-nav a:hover {
+    background-color: #a7a0a0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f5f5f5; 
+    border-right: 1px solid #ddd;
+    float: left;
+}
+
+.folders {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.folders h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.folder-list {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    margin: 0;
+}
+
+.folder-item {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.folder-name {
+    cursor: pointer;
+}
+
+.sub-folder-list {
+    display: none;
+    border: 1px solid #ddd;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.sub-folder-list li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.sub-folder-list li:last-child {
+    border-bottom: none;
+}
+
+.folder-item:hover {
+    background-color: #a7a0a0;
+    cursor: pointer;
+}
+
+.sidebar-footer {
+    background-color: white;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.footer-line {
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.add-billing-btn {
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-billing-btn:hover {
+    background-color: gray;
+   
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left h3 {
+    margin-right: 10px;
+}
+
+.header-right img {
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.product-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px;
+    padding: 3px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ccc;
+    padding: 3px;
+    text-align: left;
+    margin: 5px;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+.product-table td img {
+    margin-right: 5px;
+}
+
+.product-table th input[type="checkbox"],
+.product-table td input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.last-ro td {
+    text-align: right; 
+  }
+  
+.main-footer {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.footer-button {
+    margin: 0 10px; 
+    padding: 8px 20px;
+    border: solid rgba(0, 0, 0, 0.377);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: gray;
+}

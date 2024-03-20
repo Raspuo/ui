@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Dashboard</title>
+  <link rel="stylesheet" href="oikk.css"> <!-- Link to CSS stylesheets -->
+  <script src="oikk.js"></script><!-- Link to JavaScript files -->
+</head>
+<body>
+  <aside class="sidebar"> <!-- Sidebar content -->
+    <section class="sidebar-top">
+        <div class="tit-team">
+            <div class="logo">
+                <img src="loicon.jpg" width="30" height="30">
+            </div>
+            <div class="company-name">
+                <h1>INC<br>InnovateHub</h1>
+            </div>
+            <div class="profile-pic">
+                <img src="pp.jpg" width="30" height="30">
+            </div>
+        </div>
+    </section>
+    <nav>
+    <div class="sidebar-nav">
+        <ul>
+            <li><a href="#"><img src="pencil.jpg" width="15" height="15"> Design Team</a></li>
+            <li><a href="#"><img src="speaker.jpeg" width="20" height="20"> Marketing Team</a></li>
+            <li><a href="#"><img src="ARR.jpeg" width="15" height="15"> Development Team</a></li>
+            <li><a href="#"><img src="plus.jpeg" width="15" height="15"> Create a Team</a></li>
+          </ul>
+      </div>
+    </nav>
+    <section class="content-area">
+      <div class="folders" id="folders">
+        <h2><img src="folder.jpeg" width="15" height="15">Folders</h2>
+        <ul class="folder-list">
+          <li class="folder-item" onclick="toggleSubFolders(this)">
+            <span class="folder-name"><img src="folder.jpeg" width="15" height="15"> Products     
+              <img src="more.png" width="13" height="13"></span>
+            <ul class="sub-folder-list">
+              <li>Roadmap</li>
+              <li>Feedback</li>
+              <li>Performance</li>
+              <li>Team</li>
+              <li>Analytics</li>
+              <li><a href="#" onclick="addNewItem('products')"> Add New Item</a></li>
+            </ul>
+          </li>
+          <li class="folder-item" onclick="toggleSubFolders(this)">
+            <span class="folder-name"><img src="folder.jpeg" width="15" height="15"> Sales</span>
+          </li>
+          <li class="folder-item" onclick="toggleSubFolders(this)">
+            <span class="folder-name"><img src="folder.jpeg" width="15" height="15"> Design</span>
+          </li>
+          <li class="folder-item" onclick="toggleSubFolders(this)">
+            <span class="folder-name"><img src="folder.jpeg" width="15" height="15"> Office</span>
+          </li>
+          <li class="folder-item" onclick="toggleSubFolders(this)">
+            <span class="folder-name"><img src="folder.jpeg" width="15" height="15"> Legal</span>
+          </li>       
+        </ul>
+    </section>
+    <footer class="sidebar-footer">
+      <div class="footer-line"><img src="aduser.png" width="15" height="15"> Invite teammates</div>
+      <div class="footer-line"><img src="help.jpeg" width="15" height="15"> Help and first steps</div>
+      <div class="footer-line">
+        <span>7  days left on trial</span>
+        <button class="add-billing-btn">Add biling</button>
+      </div>
+    </footer>    
+  </aside>
+  <main> <!-- Main content -->
+  <div class="main-content">
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-left">
+        <h3>Products</h3> 
+      </div>
+      <div class="header-right">
+        <input type="text" id="search" placeholder="Search...">
+        <img src="message icon.png" width="20" height="20">
+        <img src="settings.png" width="20" height="20">
+      </div>
+    </div>
+  </header>
+  <section class="content-area">
+    <div class="button-container">
+      <div class="button-left">
+      <button><img src="allbrands.png" width="13" height="13">Brands</button>
+      <button>Desk <img src="more.png" width="13" height="13"></button>
+      <button>Tags <img src="more.png" width="13" height="13"></button>
+      <button><img src="sort.png" width="13" height="13">sort</button>
+      <button><img src="filter.png" width="13" height="13">Filter</button>
+    </div>
+    <div class="button-right">
+      <button><img src="meeting.png" width="13" height="13">Meeting</button>
+      <button><img src="importexport.png" width="13" height="13">Import/Export</button>
+    </div>
+    </div>
+    </section>
+          <div class="product-table">
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="brandHeadCheckbox"> Brand</th>
+                <th>Description</th>
+                <th>Members</th>
+                <th>Categories</th>
+                <th>Tags</th>
+                <th>Next Meeting</th>
+                <th>   </th><!-- Empty column -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox">
+                 <img src="wix.png" width="15" height="15">   Wix</td>
+                <td> build professional web presences</td>
+                <td><img src="ppl black.png" width="30" height="30"></td>
+                <td>Automation</td>
+                <td>#automation #webdevelopment</td>
+                <td>Tomorrow 10:00 AM</td>
+                <td> </td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox">
+                 <img src="shopify.png" width="15" height="15">    shopify</td>
+                <td> create online stores and sell products.</td>
+                <td><img src="ppl.png" width="30" height="30"></td>
+                <td>E-Commerce , B2B</td>
+                <td>#onlineshoping</td>
+                <td>Tomorrow </td>
+                <td>  </td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="Mailchimp.png" width="15" height="15">   Mailchimp</td>
+                <td>marketing platform .</td>
+                <td><img src="ppl.png" width="30" height="30"></td>
+                <td>SAAS,Mobile</td>
+                <td>#Techinnovation , #cloud</td>
+                <td>In 30 minutes </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="paypal.png" width="15" height="15">   paypal</td>
+                <td>online payment platform</td>
+                <td><img src="ppl black.png" width="30" height="30"></td>
+                <td>Marketplace</td>
+                <td>#BuysellOnline</td>
+                <td>In 6 hours </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="disney.png" width="15" height="15">    Disney</td>
+                <td>multinational mass media and entertainment conglomerate</td>
+                <td><img src="ppl.png" width="30" height="30"></td>
+                <td>B2C , B2B</td>
+                <td>#businesspartnership</td>
+                <td>No contact </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="intercom.png" width="15" height="15">      Intercom</td>
+                <td>modern customer communications platform </td>
+                <td><img src="ppl black.png" width="30" height="30"></td>
+                <td>Technology ,SAAS</td>
+                <td>#smartFinance , #SAAS</td>
+                <td>in 1 hour</td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="google.png" width="15" height="15">         google</td>
+                <td>internet-related services and products,</td>
+                <td><img src="ppl.png" width="30" height="30"></td>
+                <td>Finance ,AUtomation</td>
+                <td>#smartFinance </td>
+                <td>In 30 minutes </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="evermote.png" width="15" height="15">        Evernote</td>
+                <td> A note-taking and task management application</td>
+                <td><img src="ppl.png" width="30" height="30"></td>
+                <td>Transportation</td>
+                <td>#Logisticstech ,#LDC</td>
+                <td>Next month </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"><img src="microsoft.png" width="15" height="15">     Microsoft</td>
+                <td>technology company </td>
+                <td><img src="ppl black.png" width="30" height="30"></td>
+                <td>Publishing ,B2C</td>
+                <td>#B2CMarketing ,#RetailTech</td>
+                <td>No contact </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="brandCheckbox"> <img src="invision.png" width="15" height="15">      Invision</td>
+                <td> A digital product design platform</td>
+                <td><img src="ppl black.png" width="30" height="30"></td>
+                <td>Web services</td>
+                <td>#APIintegration</td>
+                <td>Next month </td>
+                <td></td><!-- Empty column -->
+              </tr>
+              <tr class="last-ro">
+                <td> 10 count</td>
+                <td>+ Add calculation</td>
+                <td>+ Add calculation</td>
+                <td>+ Add calculation</td>
+                <td>+ Add calculation</td>
+                <td>+ Add calculation</td>
+                <td></td><!-- Empty column -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </main>
+
+  <footer class="main-footer">
+    <button class="footer-button">selected</button>
+    <button class="footer-button"><img src="Archive.png" width="13" height="13">Archive</button>
+    <button class="footer-button"><img src="delete.png" width="13" height="13">Delete</button>
+    <button class="footer-button"><img src="more.png" width="13" height="13">More</button>
+  </footer>
+</body>
+</html>
